@@ -1,0 +1,9 @@
+FROM_DIR = "C:\example"
+TO_DIR = "D:\EXAMPLE"
+IS_TRANSFER_ALL = True
+DATETIME = "2021-02-20"
+DB_NAME = ""
+DB_ADDRESS = ""
+DB_PORT = "5432"
+USER = ""
+PASS = ""
