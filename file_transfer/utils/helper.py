@@ -10,8 +10,12 @@ def file_transferring(file_list, from_dir, to_dir):
     :type file_list: list of string
     :return TRUE or FALSE
     """
-    if not os.path.isdir(to_dir) or not os.path.isdir(from_dir):
-        print("Path is invalid")
+    if not os.path.isdir(from_dir):
+        print(f"{from_dir} is invalid path")
+        return False
+
+    if not os.path.isdir(to_dir):
+        print(f"{to_dir} is invalid path")
         return False
 
     num_file = len(file_list)
