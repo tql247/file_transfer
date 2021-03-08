@@ -1,6 +1,7 @@
 FROM_DIR = "//192.168.1.200/storage/V1/processed"
 TO_DIR = "C://Users/PC/Documents/dian_27"
 IS_TRANSFER_ALL = False
+IS_GET_OUTPUT = True
 DATETIME_START = "2021-02-20"
 DATETIME_END = "2021-02-20"
 LOCATION = "DIAN"

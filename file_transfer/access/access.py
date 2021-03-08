@@ -11,7 +11,7 @@ def get_video_file_name(connection):
                 select file_name, start_point 
                 from video_information vi 
                 where true
---                 and file_name like '%{LOCATION}%'
+                and file_name like '%{LOCATION}%'
                 and vi.start_point::date between date '{DATETIME_START}' and date '{DATETIME_END}'
                 order by vi.start_point asc
             """

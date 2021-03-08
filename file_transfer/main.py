@@ -16,6 +16,8 @@ def main():
 
     handle(connection)
 
+    connection.close()
+
 
 if __name__ == '__main__':
     main()

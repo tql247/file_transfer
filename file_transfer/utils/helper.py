@@ -1,6 +1,8 @@
 import os
 import shutil
 
+from file_transfer.config import IS_GET_OUTPUT
+
 
 def file_transferring(file_list, from_dir, to_dir):
     """
@@ -20,10 +22,13 @@ def file_transferring(file_list, from_dir, to_dir):
 
     num_file = len(file_list)
     for idx, file_name in enumerate(file_list):
+        if IS_GET_OUTPUT:
+            file_name = file_name.replace('.mp4', '_k20p30_result.mp4')
+        print(f'{idx}/{num_file}: {file_name} ', end="")
         if not os.path.exists(os.path.join(from_dir, file_name)):
-            print(f'\r {file_name} not exist')
+            print('not exist')
         else:
-            print(f'\r {idx}/{num_file}: {file_name} is tranferring')
+            print('is transferring')
             file_path = os.path.join(from_dir, file_name)
             to_path = os.path.join(to_dir, file_name)
             shutil.copy(file_path, to_path)
