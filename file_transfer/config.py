@@ -9,6 +9,6 @@ TIME_END = '14:50:59'
 LOCATION = "DIAN"
 DB_SERVER = "ai-factory.yedda.tech"
 DB_PORT = "5432"
-DB_NAME = "people_counting_factory"
+DB_NAME = "counting_data"
 USER = "cleaner"
 PASSWORD = "OmACCgpleLZqswc3E0ScxguxBGEYVTQW"
