@@ -1,9 +1,9 @@
-FROM_DIR = "//192.168.1.200/storage/V1/processed"
-TO_DIR = "C://Users/PC/Documents/dian_27"
+FROM_DIR = "//192.168.1.200/storage/V-TEST/pending"
+TO_DIR = "//192.168.1.200/storage/V-TEST/processed"
 IS_TRANSFER_ALL = False
 IS_GET_OUTPUT = True
-DATETIME_START = "2021-02-20"
-DATETIME_END = "2021-02-20"
+DATETIME_START = "2021-03-00"
+DATETIME_END = "2021-03-10"
 TIME_START = '14:50:59'
 TIME_END = '14:50:59'
 LOCATION = "DIAN"
