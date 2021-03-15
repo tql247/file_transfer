@@ -1,5 +1,5 @@
-FROM_DIR = "//192.168.1.200/storage/V-TEST/pending"
-TO_DIR = "//192.168.1.200/storage/V-TEST/processed"
+FROM_DIR = "//14.241.228.138/storage/V-TEST/pending"
+TO_DIR = "//14.241.228.138/storage/V-TEST/processed"
 IS_TRANSFER_ALL = False
 IS_GET_OUTPUT = True
 DATETIME_START = "2021-03-00"
