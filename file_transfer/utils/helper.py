@@ -58,7 +58,7 @@ def file_transferring_all(from_dir, to_dir):
     list_file = os.listdir(from_dir)
     num_file = len(list_file)
     for idx, file_name in enumerate(list_file):
-        print(f'\r {idx}/{num_file}: {file_name} is tranferring')
+        print(f'\r {idx}/{num_file}: {file_name} is transferring')
         file_path = os.path.join(from_dir, file_name)
         to_path = os.path.join(to_dir, file_name)
         shutil.move(file_path, to_path)
