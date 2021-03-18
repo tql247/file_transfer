@@ -23,7 +23,7 @@ def file_transferring(file_list, from_dir, to_dir):
     num_file = len(file_list)
     for idx, file_name in enumerate(file_list):
         if IS_GET_OUTPUT:
-            file_name = file_name.replace('.mp4', '_k20p30_result.mp4')
+            file_name = file_name.replace('.mp4', '__result.mp4')
         print(f'{idx}/{num_file}: {file_name} ', end="")
         if not os.path.exists(os.path.join(from_dir, file_name)):
             print('not exist')
