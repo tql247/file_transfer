@@ -11,7 +11,7 @@ def get_video_file_name(connection):
                 select file_uri, start_point 
                 from video vi 
                 where true
---                 and file_uri like '%{LOCATION}%'
+                and file_uri like '%{LOCATION}%'
                 and vi.start_point::date between date '{DATETIME_START}' and date '{DATETIME_END}'
                 and start_point::time between time '{TIME_START}' and '{TIME_END}'
                 order by vi.start_point asc
